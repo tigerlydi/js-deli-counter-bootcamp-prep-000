@@ -16,22 +16,34 @@ function nowServing(katzDeliLine) {
 }
 
 function currentLine(katzDeliLine) {
-    if (katzDeliLine.length > 0) {
-        var tempLine = "The line is currently:"
-        // var lineNumber = 0
-        //tempLine += katzDeliLine[0]
-        //tempLine += katzDeliLine[1]
-        //tempLine += katzDeliLine[2]
-        for (let ind = 0; ind < katzDeliLine.length; ind++) {
-            tempLine += ` ${ind + 1}. ${katzDeliLine[ind]}`
-            if (lineNumber !== katzDeliLine.length) {
-            tempLine += "," 
-            }
-            //" " + ++lineNumber  + "." + " " + katzDeliLine[ind] + 
+  if (katzDeliLine.length > 0) {
+    var tempLine = "The line is currently: "
+    var lineNumber = 1
+    for (let ind = 0; ind < katzDeliLine.length; ind++ ) {
+        tempLine += `${ind + 1}. ${katzDeliLine[ind]}`
+        if (lineNumber !== katzDeliLine.length) {
+          tempLine += ", "
         }
-        
-        return tempLine
-    } else { 
-        return `The line is currently empty.`
+      }
+      return tempLine
+    } else {
+      return `The line is currently empty.`
     }
+  }
+
+
+
+
+
+    for (let ind = 0; ind < katzDeliLine.length; ind++) {
+      tempLine += ` ${ind + 1}. ${katzDeliLine[ind]}`
+      if (lineNumber !== katzDeliLine.length) {
+        tempLine += ","
+    }" " + ++lineNumber  + "." + " " + katzDeliLine[ind] + {
+  } return tempLine {
+    } else {
+       return `The line is currently empty.`
+  }
+}
+}
 }
